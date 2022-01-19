@@ -1,0 +1,21 @@
+.anuncie-conteudo {
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px;
+}
+
+.anuncie-conteudo h3 {
+  padding: 20px;
+}
+
+.anuncie-conteudo h2 {
+  margin-bottom: 20px;
+}
+
+.anuncie-conteudo a {
+  background: #fff;
+  display: inline-block;
+  padding: 15px 12px;
+  border-radius: 4px;
+  width: 30%;
+}
