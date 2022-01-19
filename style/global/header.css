@@ -1,0 +1,24 @@
+.header-bg {
+  background: var(--color-b1);
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 48px;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.header-menu a:hover {
+  background: rgba(207, 207, 207, 0.5);
+  padding: 15px 0;
+}
