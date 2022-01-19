@@ -1,0 +1,89 @@
+.intro-bg {
+  background: url("../../img/hero-large.webp") no-repeat 50%;
+  background-size: cover;
+  height: 364px;
+}
+
+.intro-conteudo {
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-conteudo h1 {
+  padding-top: 75px;
+}
+
+.info {
+  background: var(--color-2);
+  border-radius: 4px;
+  padding: 9px 12px;
+  text-align: center;
+}
+
+.seller {
+  position: absolute;
+  top: 12px;
+  right: -45px;
+}
+
+.label-none {
+  display: none;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 960px;
+  padding: 10px;
+  /* flex: 1 100%; */
+}
+
+.intro-search {
+  padding: 15px;
+}
+
+.form select:hover {
+  border-color: var(--color-b1);
+}
+
+.form select,
+.search-input {
+  padding: 15px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  font-size: 16px;
+}
+
+.select-type {
+  width: 160px;
+}
+
+.search-input {
+  width: 100%;
+  padding-right: 35px;
+}
+
+.search-submit {
+  border: none;
+  width: 100%;
+  background: var(--color-b1);
+  padding: 16px 10px;
+  margin-left: 52px;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media (max-width: 1180px) {
+  .seller {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .form {
+    flex-wrap: wrap;
+  }
+}
