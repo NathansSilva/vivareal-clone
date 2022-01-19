@@ -1,0 +1,49 @@
+.ad-bg {
+  background: var(--color-b1);
+}
+
+.ad-conteudo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-self: center;
+  gap: 10px;
+  padding: 32px;
+  margin: 0 auto;
+}
+
+.ad-conteudo p {
+  width: 550px;
+  text-align: center;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.ad-conteudo a {
+  place-self: center;
+  text-transform: uppercase;
+  display: inline-block;
+  color: var(--color-b1);
+  padding: 10px 32px;
+  border-radius: 4px;
+  background: #fff;
+  max-width: max-content;
+}
+
+@media (max-width: 970px) {
+  .ad-conteudo {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+
+  .ad-conteudo p {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+    text-align: center;
+    width: auto;
+  }
+
+  .ad-conteudo img {
+    margin: 0 auto;
+  }
+}
