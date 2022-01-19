@@ -1,0 +1,46 @@
+.img1 {
+  background: url("../../img/icon-houses.svg") no-repeat 54% 8px;
+}
+.img2 {
+  background: url("../../img/search.svg") no-repeat 50% 12px;
+}
+.img3 {
+  background: url("../../img/cel.svg") no-repeat 53.5% 16px;
+}
+
+.about-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.about-list img {
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.about-list h3 {
+  margin-bottom: 15px;
+  width: 294px;
+}
+
+.about-list p {
+  width: 294px;
+}
+
+.content-about {
+  margin-top: 100px;
+  padding-bottom: 90px;
+}
+
+@media (max-width: 800px) {
+  .about-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: auto;
+  }
+
+  .about-list p {
+    width: auto;
+  }
+}
