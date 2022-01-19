@@ -1,0 +1,95 @@
+.decoration {
+  padding: 50px;
+  text-align: center;
+}
+
+.decoration:after {
+  content: "";
+  display: block;
+  border-radius: 4px;
+  margin: 12px auto 32px;
+  width: 32px;
+  height: 5px;
+  background: var(--color-b1);
+}
+
+.lista {
+  display: flex;
+  gap: 20px;
+}
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-shrink: 1;
+  width: fit-content;
+  border-radius: 4px;
+  border: 1px solid #ebebeb;
+}
+
+.imoveis-chegaram :last-child {
+  margin-bottom: 25px;
+}
+
+.item ul {
+  padding-bottom: 15px;
+  display: flex;
+}
+
+.item img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  margin-bottom: 15px;
+}
+
+.info-item {
+  gap: 15px;
+  padding-left: 15px;
+}
+
+.info-item p:nth-child(1) {
+  font: 600 1.2rem "Open Sans", Helvetica;
+  margin-bottom: 12px;
+}
+
+.item ul {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.item ul span {
+  font-weight: bold;
+}
+
+.item h2 {
+  font: 300 1rem/1.1 "Open Sans", Helvetica;
+  margin-bottom: 5px;
+}
+
+.item a {
+  text-transform: uppercase;
+  margin-top: 45px;
+  margin-bottom: 15px;
+  padding-left: 15px;
+}
+
+.item a:hover {
+  color: rgb(230, 146, 36);
+}
+
+@media (max-width: 800px) {
+  .lista {
+    flex-direction: column;
+  }
+
+  .item {
+    margin: 0 auto;
+  }
+
+  .decoration {
+    padding-bottom: 20px;
+  }
+}
