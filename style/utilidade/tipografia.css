@@ -1,0 +1,25 @@
+.font-1-s,
+.font-1-sb {
+  font: 600 0.8125rem "Open Sans", Helvetica;
+  letter-spacing: 0.8px;
+}
+
+.font-1-sb {
+  text-transform: uppercase;
+}
+
+.font-1-m {
+  font: 600 1rem/1.1 "Open Sans", Helvetica;
+}
+
+.font-1-ml {
+  font: 400 1.25rem/1.1 "Open Sans", Helvetica;
+}
+
+.font-1-mla {
+  font: 600 1.25rem/1.1 "Open Sans", Helvetica;
+}
+
+.font-1-l {
+  font: 300 2rem/1.1 "Open Sans", Helvetica;
+}
