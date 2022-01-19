@@ -1,0 +1,13 @@
+@import "./global/global.css";
+@import "./utilidade/componentes.css";
+@import "./utilidade/cores.css";
+@import "./utilidade/tipografia.css";
+
+@import "./global/header.css";
+@import "./global/footer.css";
+/*home*/
+@import "./home/intro.css";
+@import "./home/lancamentos.css";
+@import "./home/ad.css";
+@import "./home/about-list.css";
+@import "./home/anuncie-content.css";
