@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Imóveis à venda e Imóveis para alugar. No Viva Real você encontra casas e apartamentos novos e usados para compra, venda ou aluguel em SP e no Brasil. Anuncie seu imóvel!">
+  <title> Imóveis, Casas e Apartamentos para Compra, Venda e Aluguel - Viva Real </title>
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header-bg">
+    <div class="header">
+      <a href="./"><img src="./img/vivareal-logo.svg" alt=""></a>
+      <nav>
+        <ul class="header-menu font-1-sb color-0" aria-label="primary">
+          <li><a href="./">Comprar</a></li>
+          <li><a href="./">Alugar</a></li>
+          <li><a href="./">Imóveis Novos</a></li>
+          <li><a href="./">Descobrir</a></li>
+          <li><a href="./">Financiamento</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="intro intro-bg">
+      <div class="intro-conteudo container">
+        <h1 class="color-1 font-1-l">A sua nova casa está aqui no Viva Real</h1>
+        <a class="seller font-1-s info color-0" href="./">Anunciante: acesse seu portal aqui</a>
+        <div class="intro-search">
+          <form action="" class="form">
+            <div>
+              <label class="label-none" for="estado">O que você deseja</label>
+              <select class="type-search select-type" id="estado" name="estado">
+                <option class="item" value="sale">
+                  Comprar
+                </option>
+                <option class="item" value="rent">
+                  Alugar
+                </option>
+                <option class="item" value="development">
+                  Imóveis Novos
+                </option>
+              </select>
+            </div>
+            <div>
+              <label for="tipo-imovel" class="label-none">Tipo do imóvel</label>
+              <select class="type-building select-type">
+                <option value=""> Mostrar todos </option>
+                <optgroup label="Residencial">
+                  <option value="APARTMENT|UnitSubType_NONE,DUPLEX,LOFT,STUDIO,TRIPLEX|RESIDENTIAL|APARTMENT" selected="">
+                    Apartamento
+                  </option>
+                  <option value="HOME|UnitSubType_NONE,SINGLE_STOREY_HOUSE,VILLAGE_HOUSE,KITNET|RESIDENTIAL|HOME">
+                    Casa
+                  </option>
+                  <option value="HOME|CONDOMINIUM|RESIDENTIAL|CONDOMINIUM">
+                    Casa de Condomínio
+                  </option>
+                  <option value="COUNTRY_HOUSE|UnitSubType_NONE|RESIDENTIAL|COUNTRY_HOUSE">
+                    Chácara
+                  </option>
+                  <option value="APARTMENT|PENTHOUSE|RESIDENTIAL|PENTHOUSE">
+                    Cobertura
+                  </option>
+                  <option value="APARTMENT|FLAT|RESIDENTIAL|FLAT">
+                    Flat
+                  </option>
+                  <option value="APARTMENT|KITNET|RESIDENTIAL|KITNET">
+                    Kitnet/Conjugado
+                  </option>
+                  <option value="ALLOTMENT_LAND|UnitSubType_NONE,CONDOMINIUM,VILLAGE_HOUSE|RESIDENTIAL|RESIDENTIAL_ALLOTMENT_LAND">
+                    Lote/Terreno
+                  </option>
+                  <option value="HOME|TWO_STORY_HOUSE|RESIDENTIAL|TWO_STORY_HOUSE">
+                    Sobrado
+                  </option>
+                  <option value="RESIDENTIAL_BUILDING|UnitSubType_NONE|RESIDENTIAL|RESIDENTIAL_BUILDING">
+                    Edifício Residencial
+                  </option>
+                  <option value="FARM|UnitSubType_NONE,CONDOMINIUM|RESIDENTIAL|FARM">
+                    Fazenda/Sítios/Chácaras
+                  </option>
+                </optgroup>
+                <optgroup label="Comercial">
+                  <option value="OFFICE|CLINIC|COMMERCIAL|CLINIC">
+                    Consultório
+                  </option>
+                  <option value="SHED_DEPOSIT_WAREHOUSE|UnitSubType_NONE|COMMERCIAL|SHED_DEPOSIT_WAREHOUSE">
+                    Galpão/Depósito/Armazém
+                  </option>
+                  <option value="HOME|UnitSubType_NONE|COMMERCIAL|COMMERCIAL_PROPERTY">
+                    Imóvel Comercial
+                  </option>
+                  <option value="ALLOTMENT_LAND|UnitSubType_NONE|COMMERCIAL|COMMERCIAL_ALLOTMENT_LAND">
+                    Lote/Terreno
+                  </option>
+                  <option value="BUSINESS|UnitSubType_NONE,RETAIL_CENTER,GALLERY,SHOPPING|COMMERCIAL|BUSINESS">
+                    Ponto Comercial/Loja/Box
+                  </option>
+                  <option value="OFFICE|UnitSubType_NONE,OFFICE,FLOOR|COMMERCIAL|OFFICE">
+                    Sala/Conjunto
+                  </option>
+                  <option value="BUILDING|UnitSubType_NONE|COMMERCIAL|COMMERCIAL_BUILDING">
+                    Prédio/Edifício Inteiro
+                  </option>
+                </optgroup>
+              </select>
+            </div>
+            <div>
+              <input type="text" placeholder="Digite uma rua, bairro ou cidade" class="search-input" autocomplete="off">
+            </div>
+            <div><input class="search-submit color-0 font-1-m" type="submit" value="Buscar"></div>
+          </form>
+        </div>
+        <div><a class="info font-1-s color-0" href="">Buscar por código do imóvel</a></div>
+      </div>
+    </section>
+
+    <section class="item-pai">
+      <section class="lancamentos-conteudo container">
+        <h2 class="decoration color-1 font-1-l">Lançamentos próximos a você</h2>
+        <div class="imoveis-info">
+          <div>
+            <ul class="lista">
+              <li>
+                <div class="item">
+                  <img src="./img/imovel-1.jpg" alt="">
+                  <div class="info-item">
+                    <p>R$ 828.000</p>
+                    <ul>
+                      <li><span>105</span> m²</li>
+                      <li><span>3</span> Quartos</li>
+                      <li><span>3</span> Banheiros</li>
+                      <li><span>2</span> Vagas</li>
+                    </ul>
+                    <h2 class="color-2">Roriz</h2>
+                    <span class="color-2">Rua Regente Feijó, 176</span>
+                    <br>
+                  </div>
+                  <a class="color-b1 font-1-s" href="./">Ver todos os detalhes</a>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <img src="./img/imovel-2.jpg" alt="">
+                  <div class="info-item">
+                    <p>R$ 1.049.600</p>
+                    <ul>
+                      <li><span>117</span> m²</li>
+                      <li><span>3</span> Quartos</li>
+                      <li><span>1</span> Banheiro</li>
+                      <li><span>2-3</span> Vagas</li>
+                    </ul>
+                    <h2 class="color-2">VidaBella - Lorenzini</h2>
+                    <span class="color-2">Rua Tabaiares, 172 - Vila Assunção</span>
+                    <br>
+                  </div>
+                  <a class="color-b1 font-1-s" href="./">Ver todos os detalhes</a>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <img src="./img/imovel-1.jpg" alt="">
+                  <div class="info-item">
+                    <p>Sob Consulta</p>
+                    <ul>
+                      <li><span>82-237</span> m²</li>
+                      <li><span>3-4</span> Quartos</li>
+                      <li><span>2-6</span> Banheiros</li>
+                      <li><span>--</span> Vagas</li>
+                    </ul>
+                    <h2 class="color-2">The Adress Santo André</h2>
+                    <span class="color-2">Rua Avanhandava, 96</span>
+                    <br>
+                  </div>
+                  <a class="color-b1 font-1-s" href="./">Ver todos os detalhes</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="imoveis-baixos container">
+        <h2 class="decoration color-1 font-1-l">Imóveis que baixaram em até 28% de preço perto de você</h2>
+        <div class="imoveis-info">
+          <div>
+            <ul class="lista">
+              <li>
+                <div class="item">
+                  <img src="./img/imovel-1.jpg" alt="">
+                  <div class="info-item">
+                    <p>R$ 828.000</p>
+                    <ul>
+                      <li><span>105</span> m²</li>
+                      <li><span>3</span> Quartos</li>
+                      <li><span>3</span> Banheiros</li>
+                      <li><span>2</span> Vagas</li>
+                    </ul>
+                    <h2 class="color-2">Roriz</h2>
+                    <span class="color-2">Rua Regente Feijó, 176</span>
+                    <br>
+                  </div>
+                  <a class="color-b1 font-1-s" href="./">Ver todos os detalhes</a>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <img src="./img/imovel-2.jpg" alt="">
+                  <div class="info-item">
+                    <p>R$ 1.049.600</p>
+                    <ul>
+                      <li><span>117</span> m²</li>
+                      <li><span>3</span> Quartos</li>
+                      <li><span>1</span> Banheiro</li>
+                      <li><span>2-3</span> Vagas</li>
+                    </ul>
+                    <h2 class="color-2">VidaBella - Lorenzini</h2>
+                    <span class="color-2">Rua Tabaiares, 172 - Vila Assunção</span>
+                    <br>
+                  </div>
+                  <a class="color-b1 font-1-s" href="./">Ver todos os detalhes</a>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <img src="./img/imovel-1.jpg" alt="">
+                  <div class="info-item">
+                    <p>Sob Consulta</p>
+                    <ul>
+                      <li><span>82-237</span> m²</li>
+                      <li><span>3-4</span> Quartos</li>
+                      <li><span>2-6</span> Banheiros</li>
+                      <li><span>--</span> Vagas</li>
+                    </ul>
+                    <h2 class="color-2">The Adress Santo André</h2>
+                    <span class="color-2">Rua Avanhandava, 96</span>
+                    <br>
+                  </div>
+                  <a class="color-b1 font-1-s" href="./">Ver todos os detalhes</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="imoveis-perto container">
+        <h2 class="decoration color-1 font-1-l">Imóveis perto de você</h2>
+        <div class="imoveis-info">
+          <div>
+            <ul class="lista">
+              <li>
+                <div class="item">
+                  <img src="./img/imovel-1.jpg" alt="">
+                  <div class="info-item">
+                    <p>R$ 828.000</p>
+                    <ul>
+                      <li><span>105</span> m²</li>
+                      <li><span>3</span> Quartos</li>
+                      <li><span>3</span> Banheiros</li>
+                      <li><span>2</span> Vagas</li>
+                    </ul>
+                    <h2 class="color-2">Roriz</h2>
+                    <span class="color-2">Rua Regente Feijó, 176</span>
+                    <br>
+                  </div>
+                  <a class="color-b1 font-1-s" href="./">Ver todos os detalhes</a>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <img src="./img/imovel-2.jpg" alt="">
+                  <div class="info-item">
+                    <p>R$ 1.049.600</p>
+                    <ul>
+                      <li><span>117</span> m²</li>
+                      <li><span>3</span> Quartos</li>
+                      <li><span>1</span> Banheiro</li>
+                      <li><span>2-3</span> Vagas</li>
+                    </ul>
+                    <h2 class="color-2">VidaBella - Lorenzini</h2>
+                    <span class="color-2">Rua Tabaiares, 172 - Vila Assunção</span>
+                    <br>
+                  </div>
+                  <a class="color-b1 font-1-s" href="./">Ver todos os detalhes</a>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <img src="./img/imovel-1.jpg" alt="">
+                  <div class="info-item">
+                    <p>Sob Consulta</p>
+                    <ul>
+                      <li><span>82-237</span> m²</li>
+                      <li><span>3-4</span> Quartos</li>
+                      <li><span>2-6</span> Banheiros</li>
+                      <li><span>--</span> Vagas</li>
+                    </ul>
+                    <h2 class="color-2">The Adress Santo André</h2>
+                    <span class="color-2">Rua Avanhandava, 96</span>
+                    <br>
+                  </div>
+                  <a class="color-b1 font-1-s" href="./">Ver todos os detalhes</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="apartamento-populares container">
+        <h2 class="decoration color-1 font-1-l">Apartamentos mais populares perto de você</h2>
+        <div class="imoveis-info">
+          <div>
+            <ul class="lista">
+              <li>
+                <div class="item">
+                  <img src="./img/imovel-1.jpg" alt="">
+                  <div class="info-item">
+                    <p>R$ 828.000</p>
+                    <ul>
+                      <li><span>105</span> m²</li>
+                      <li><span>3</span> Quartos</li>
+                      <li><span>3</span> Banheiros</li>
+                      <li><span>2</span> Vagas</li>
+                    </ul>
+                    <h2 class="color-2">Roriz</h2>
+                    <span class="color-2">Rua Regente Feijó, 176</span>
+                    <br>
+                  </div>
+                  <a class="color-b1 font-1-s" href="./">Ver todos os detalhes</a>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <img src="./img/imovel-2.jpg" alt="">
+                  <div class="info-item">
+                    <p>R$ 1.049.600</p>
+                    <ul>
+                      <li><span>117</span> m²</li>
+                      <li><span>3</span> Quartos</li>
+                      <li><span>1</span> Banheiro</li>
+                      <li><span>2-3</span> Vagas</li>
+                    </ul>
+                    <h2 class="color-2">VidaBella - Lorenzini</h2>
+                    <span class="color-2">Rua Tabaiares, 172 - Vila Assunção</span>
+                    <br>
+                  </div>
+                  <a class="color-b1 font-1-s" href="./">Ver todos os detalhes</a>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <img src="./img/imovel-1.jpg" alt="">
+                  <div class="info-item">
+                    <p>Sob Consulta</p>
+                    <ul>
+                      <li><span>82-237</span> m²</li>
+                      <li><span>3-4</span> Quartos</li>
+                      <li><span>2-6</span> Banheiros</li>
+                      <li><span>--</span> Vagas</li>
+                    </ul>
+                    <h2 class="color-2">The Adress Santo André</h2>
+                    <span class="color-2">Rua Avanhandava, 96</span>
+                    <br>
+                  </div>
+                  <a class="color-b1 font-1-s" href="./">Ver todos os detalhes</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="casas-populares container">
+        <h2 class="decoration color-1 font-1-l">Casas mais populares perto de você</h2>
+        <div class="imoveis-info">
+          <div>
+            <ul class="lista">
+              <li>
+                <div class="item">
+                  <img src="./img/imovel-1.jpg" alt="">
+                  <div class="info-item">
+                    <p>R$ 828.000</p>
+                    <ul>
+                      <li><span>105</span> m²</li>
+                      <li><span>3</span> Quartos</li>
+                      <li><span>3</span> Banheiros</li>
+                      <li><span>2</span> Vagas</li>
+                    </ul>
+                    <h2 class="color-2">Roriz</h2>
+                    <span class="color-2">Rua Regente Feijó, 176</span>
+                    <br>
+                  </div>
+                  <a class="color-b1 font-1-s" href="./">Ver todos os detalhes</a>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <img src="./img/imovel-2.jpg" alt="">
+                  <div class="info-item">
+                    <p>R$ 1.049.600</p>
+                    <ul>
+                      <li><span>117</span> m²</li>
+                      <li><span>3</span> Quartos</li>
+                      <li><span>1</span> Banheiro</li>
+                      <li><span>2-3</span> Vagas</li>
+                    </ul>
+                    <h2 class="color-2">VidaBella - Lorenzini</h2>
+                    <span class="color-2">Rua Tabaiares, 172 - Vila Assunção</span>
+                    <br>
+                  </div>
+                  <a class="color-b1 font-1-s" href="./">Ver todos os detalhes</a>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <img src="./img/imovel-1.jpg" alt="">
+                  <div class="info-item">
+                    <p>Sob Consulta</p>
+                    <ul>
+                      <li><span>82-237</span> m²</li>
+                      <li><span>3-4</span> Quartos</li>
+                      <li><span>2-6</span> Banheiros</li>
+                      <li><span>--</span> Vagas</li>
+                    </ul>
+                    <h2 class="color-2">The Adress Santo André</h2>
+                    <span class="color-2">Rua Avanhandava, 96</span>
+                    <br>
+                  </div>
+                  <a class="color-b1 font-1-s" href="./">Ver todos os detalhes</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="imoveis-chegaram container">
+        <h2 class="decoration color-1 font-1-l">Imóveis que acabaram de chegar no Viva Real</h2>
+        <div class="imoveis-info">
+          <div>
+            <ul class="lista">
+              <li>
+                <div class="item">
+                  <img src="./img/imovel-1.jpg" alt="">
+                  <div class="info-item">
+                    <p>R$ 828.000</p>
+                    <ul>
+                      <li><span>105</span> m²</li>
+                      <li><span>3</span> Quartos</li>
+                      <li><span>3</span> Banheiros</li>
+                      <li><span>2</span> Vagas</li>
+                    </ul>
+                    <h2 class="color-2">Roriz</h2>
+                    <span class="color-2">Rua Regente Feijó, 176</span>
+                    <br>
+                  </div>
+                  <a class="color-b1 font-1-s" href="./">Ver todos os detalhes</a>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <img src="./img/imovel-2.jpg" alt="">
+                  <div class="info-item">
+                    <p>R$ 1.049.600</p>
+                    <ul>
+                      <li><span>117</span> m²</li>
+                      <li><span>3</span> Quartos</li>
+                      <li><span>1</span> Banheiro</li>
+                      <li><span>2-3</span> Vagas</li>
+                    </ul>
+                    <h2 class="color-2">VidaBella - Lorenzini</h2>
+                    <span class="color-2">Rua Tabaiares, 172 - Vila Assunção</span>
+                    <br>
+                  </div>
+                  <a class="color-b1 font-1-s" href="./">Ver todos os detalhes</a>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <img src="./img/imovel-1.jpg" alt="">
+                  <div class="info-item">
+                    <p>Sob Consulta</p>
+                    <ul>
+                      <li><span>82-237</span> m²</li>
+                      <li><span>3-4</span> Quartos</li>
+                      <li><span>2-6</span> Banheiros</li>
+                      <li><span>--</span> Vagas</li>
+                    </ul>
+                    <h2 class="color-2">The Adress Santo André</h2>
+                    <span class="color-2">Rua Avanhandava, 96</span>
+                    <br>
+                  </div>
+                  <a class="color-b1 font-1-s" href="./">Ver todos os detalhes</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>
+
+
+    <section class="ad-bg">
+      <div class="ad-conteudo container">
+        <img src="./img/vivareal-santander.svg" alt="">
+        <p class="font-1-ml color-0">Simule um financiamento para a compra do seu imóvel com uma das taxas mais baixas do mercado, a partir de 8,99% ao ano.</p>
+        <a class="font-1-ml" href="">simular</a>
+      </div>
+    </section>
+
+    <section class='about container'>
+      <h2 class="decoration color-1 font-1-l">O maior portal de imóveis do Brasil</h2>
+      <ul class="about-list">
+        <li class="img1">
+          <div class="content-about">
+            <h3 class="color-1">Mais de 5 milhões de imóveis</h3>
+            <p class="color-1">Encontrar o imóvel dos seus sonhos se torna uma experiência ainda melhor com mais de 5 milhões de opções que o Viva Real oferece.</p>
+          </div>
+        </li>
+        <li class="img2">
+          <div class="content-about">
+            <h3 class="color-1">Encontre seu imóvel perfeito</h3>
+            <p class="color-1">É possível buscar seu novo lar através dos filtros de palavra-chave, características e valor total de aluguel que o Viva Real mostra para você.</p>
+          </div>
+        </li>
+        <li class="img3">
+          <div class="content-about">
+            <h3 class="color-1">Seu imóvel na palma da mão</h3>
+            <p class="color-1">Quer buscar imóveis de qualquer lugar, falar com corretores, agendar visitas e ver facilidades ao redor do imóvel? Baixe o app Viva Real grátis.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="ad-bg">
+      <div class="container anuncie-conteudo">
+        <h3 class="color-3 font-1-lm">Corretores, imobiliárias e incorporadoras</h3>
+        <h2 class="font-1-l color-0">Receba mais contatos divulgando os seus imóveis no maior portal imobiliário do Brasil</h2>
+        <a class="color-b1 font-1-m" href="./">Anunciar Imóveis</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class='footer-bg'>
+    <div class="footer font-1-m color-0">
+      <a href="https://github.com/nathanssilva">Nathan S. 2022</a>
+    </div>
+  </footer>
+</body>
+
+</html>
